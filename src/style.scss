@@ -1,0 +1,64 @@
+.app {
+  &-wrap {
+    span {
+      display: inline-block;
+      width: 60px;
+    }
+    label {
+      display: block;
+    }
+
+    input {
+      height: 20px;
+      font-size: 14px;
+    }
+  }
+
+  &-select-file {
+    padding: 10px 0;
+  }
+
+  &-position-inputs {
+    button {
+      width: 100px;
+      height: 20px;
+      margin-top: 10px;
+    }
+  }
+  &-source-map-obj {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    height: 40vh;
+    width: 70vw;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+  }
+
+  &-source-map-content {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+    height: 50vh;
+  }
+  &-source-path {
+    font-weight: 600;
+  }
+  &-source-map-source {
+    padding: 20px;
+  }
+}
+
+.line-num {
+  display: inline-block;
+  width: 50px;
+}
+
+.active-line {
+  background-color: #ccc;
+}
+
+.active-col {
+  background-color: green;
+}
