@@ -1,0 +1,27 @@
+{
+  "name": "source-map-viewer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:zenghongtu/source-map-viewer.git",
+  "author": "zenghongtu <zenghongtu@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html --out-dir build/debug",
+    "build": "parcel build src/index.html --out-dir build/release --public-url ./"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@types/source-map": "^0.5.7",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "source-map": "^0.7.3",
+    "stacktracey": "^1.2.123"
+  }
+}
