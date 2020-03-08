@@ -91,13 +91,24 @@ const App = () => {
 
   return (
     <div className="app-wrap">
+      <header>
+        <h2>Source Map Viewer</h2>
+        <ol>
+          <li>Select a Source-Map file</li>
+          <li>Set row and column</li>
+          <li>Confirm</li>
+        </ol>
+      </header>
       <div className="app-select-file">
-        <input
-          type="file"
-          name="upload-file"
-          id="upload-file"
-          onChange={handleChange}
-        />
+        <label>
+          <span> 👉👉:</span>
+          <input
+            type="file"
+            name="upload-file"
+            id="upload-file"
+            onChange={handleChange}
+          />
+        </label>
       </div>
 
       <div className="app-position-inputs">
